@@ -22,7 +22,7 @@ for dir in directories:
     logging.info("directory created")
 
 for file in files:
-    file_path= Path(dir)
+    file_path= Path(file)
     file_path.parent.mkdir(parents=True,exist_ok=True)
 
     if not file_path.exists():
